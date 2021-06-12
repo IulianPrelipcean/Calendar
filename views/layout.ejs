@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>layout</title>
+		<link rel="stylesheet" type="text/css" href="css/stil.css" />
+		<script src="js/script.js"></script>
+	</head>
+
+	<body>
+		<header>
+			<div class="header_text">
+				CALENDAR
+				<% if (utilizator != undefined) { %>
+					<div class="utilizator_logat">
+						<div class="text_utilizator">Sunteti conectat ca: <span style="color: black;"> <%= utilizator %> </span></div>
+						<a href="/delogare" class="button_delogare"><b>Delogare</b></a>
+					</div>
+				<% }else { %>
+					<div class="utilizator_logat">
+						<div class="text_utilizator">Nu sunteti conectat !</div>
+					</div>
+				<% } %>
+			</div>
+		</header>
+
+		<% if (utilizator != undefined  && utilizator == undefined) { %>
+			<nav class="menuBar" id="myMenubar">
+				<a href="/">Calendar</a>
+				<a href="/chestionar">Raport</a>
+			</nav>
+		<% } %>
+
+
+        <%- body %>
+
+	</body>
+</html>
+
+ 

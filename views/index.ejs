@@ -1,0 +1,37 @@
+ 
+
+
+<div class="index">
+	
+	
+	<% if (utilizator == undefined) { %>
+		<div class="autentificare">
+			<% if(mesaj != undefined) { %>
+				<div class="mesaj_eroare_autentificare">
+					<%= mesaj %>
+				</div>
+			<% } %> 
+		
+			<form action="/verificare-autentificare" method="POST" class="formular_autentificare">
+		
+				<label>Utilizator</label>
+				<input type="text" id="utilizator" name="utilizator" value="">
+				<br>
+				<label>Parola</label>
+				<input type="password" id="parola" name="parola" value="">
+				<br>
+				<button class="button_autentificare">Autentificare</button>
+			</form>
+
+			<form action="/adaugare_utilizator" method="GET" class="formular_autentificare">
+				<button class="button_autentificare">Creare cont</button>
+			</form>
+		
+		</div>
+	<% }else {%>
+		
+
+	<% } %>
+	
+
+</div>

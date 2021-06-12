@@ -1,0 +1,2 @@
+ 
+Pagina va contine posibilitatea de creare a unui cont si accesarea unei pagini in care utilizatorul isi poate adauga task-uri pe care sa le gestioneze. Acesta va avea la dispozitie un format de tip calendar pe saptamani, iar un task poate contine ora de inceput, ora de sfarsit, starea acestuia si o descriere.

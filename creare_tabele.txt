@@ -1,0 +1,19 @@
+ 
+create table user(
+    id int primary key auto_increment,
+    nume varchar(50),
+    parola varchar(50)
+);
+
+create table eveniment(
+    id int primary key auto_increment,
+    id_user int,
+    titlu varchar(50),
+    ora_inceput varchar(50),
+    ora_sfarsit varchar(50),
+    descriere varchar(500),
+    zi int,
+    luna int,
+    an int
+);
+    

@@ -1,0 +1,69 @@
+ 
+
+
+
+<div class="content_total">
+	<div class="meniu_stanga_box">
+		<div class="" id="an_curent">	
+		</div>
+		<div class="" id="luna_curenta">	
+		</div>
+		<button class="buton_afisare_calendar" onClick="afisareTabel()">Schimba data</button>
+	</div>
+
+	<div class="calendar_box">
+		<iframe onload="apeluriMultiple()" style="width:0px; height: 0px;"></iframe>
+		<div id="tabel">
+		</div>
+
+		<!-- Trigger/Open The Modal -->
+		<!-- <button id="myBtn">Open Modal</button> -->
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+				<span class="close">&times;</span>
+				<div class="continut">
+					<div class="date_eveniment_nou">
+						<h3> Ziua: <span id="ziua_selectata"></span></h3> 
+						<input type="hidden" value="" id="zi_aleasa">
+						<br/>
+						<label>Adaugati un titlu</label>
+						<input type="text" name="titlu" id="titlu_eveniment">
+						<br/>
+						<label>Ora de inceput</label>
+						<select name="ora_de_inceput" id="ora_de_inceput">
+							<% for(var i=0; i<24; i++) { %>
+								<option value="<%= i%>:00"><%= i %>:00</option>
+							<% } %>
+						</select>
+						<br/>
+						<label>Ora de sfarsit</label>
+						<select name="ora_de_sfarsit" id="ora_de_sfarsit">
+							<% for(var i=0; i<24; i++) { %>
+								<option value="<%= i%>:00"><%= i %>:00</option>
+							<% } %>
+						</select>
+						<br/>
+						<label>Descrieti activitatea:</label>
+						<br>
+						<textarea rows="5" cols="60" id="description"></textarea>
+						<br/>
+						<button class="button_adaugare" onClick="salveazaEveniment()">Adauga eveniment</button>
+					</div>
+					<div class="evenimente_existente" id="evenimente_existente">
+						
+					</div>
+				</div>
+			</div>
+
+		</div>
+		
+
+
+		<div id="button">
+		</div>
+	</div>
+</div>

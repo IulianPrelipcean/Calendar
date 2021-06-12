@@ -1,0 +1,482 @@
+ 
+header{
+    background: linear-gradient(80deg, rgb(2, 100, 100) 0%, rgb(90, 114, 107) 35%, rgb(64, 97, 69) 100%);
+    height: 50px;
+}
+
+.header_text{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 30px;
+    margin: auto;
+    margin-left: 300px;
+}
+
+.menuBar {
+    overflow: hidden;
+    background-color: #333;
+    /* position: fixed;
+    width: 100%; */
+}
+
+.menuBar a {
+    float: left;
+    display: block;
+    color: #eee8e8;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.menuBar a:hover {
+    /* background-color: rgba(160, 125, 125, 0.2); */
+    background-color: rgba(192, 22, 235, 0.308);
+    color: rgb(0, 0, 0);
+}
+
+.menuBar a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.menuBar .icon {
+    display: none;
+}
+
+
+
+/* -------------------------------  begin  ----------------------------- */
+
+body{
+    margin: 0px;
+    /* margin-top: 650px; */
+    background-size: 100% 100%;
+    min-height: 1000px;
+    background-image: linear-gradient(to bottom right, rgb(247, 218, 218), rgb(156, 241, 241));
+}
+ 
+
+
+/*--------------------- acasa.ejs --------------------*/
+
+.index{
+    margin: 30px;
+}
+
+.utilizator_logat{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    width: 40%;
+    color:rgb(29, 211, 29);
+    /* border: solid 2px; */
+    float: right;
+    /* display:inline-block; */
+}
+
+.text_utilizator{
+    /* width: 80%; */
+    /* atributul de inline sau inline-blok trebuie plasat in fiecare din clasele care vor fi puse inline */
+    /* pentru inline-block putem seta si width, pt inline nu putem */
+    display:inline-block;
+}
+
+.button_delogare{
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(241, 24, 24);
+    font-size: 20px;
+    margin: 0px;
+    border:none;
+    border-radius: 10px;
+    padding: 5px;
+    display:inline-block;
+    /* float: right; */
+}
+
+.button_delogare:hover{
+    background-color: rgb(14, 19, 3);
+}
+a{
+    color:white;
+    text-decoration: none;
+}
+
+
+/*--------------------- chestionar.ejs --------------------*/
+
+.chestionar{
+    margin:30px;
+}
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #f0f5f0;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid rgb(158, 155, 155);
+}
+
+input[type='radio']:checked:after {
+    /* width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative; */
+    background-color: #35f106;
+    /* content: ''; */
+    /* display: inline-block; */
+    visibility: visible;
+    border: 2px solid white;
+}
+
+
+.intrebare_cu_variante{
+	font-family: 'Times New Roman', Times, serif;
+	font-size: 18px;
+	border-radius:10px;
+    border-bottom: black solid 2px;
+    border-right: black solid 1px;
+	padding-top: 20px;
+	margin-top:5px;
+	width: 50%;
+}
+
+.button_trimite{
+	margin-top:10px;
+    background-color: #1ed33c; /* Green */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+.variante{
+	padding-top:8px;
+}
+
+
+/*--------------------- .autentificare.ejs --------------------*/
+
+.autentificare{
+    margin-left: 30%;
+    /* position: center; */
+}
+
+input, select {
+    padding: 4px 10px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+input[type=submit]{
+    background-color: rgb(109, 104, 119);
+    font-size: 20px;
+}
+
+input[type=submit]:hover{
+    background-color: rgb(65, 223, 65);
+    font-size: 20px;
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}
+
+.formular_autentificare{
+    margin:0px;
+    border-radius: 10px;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    padding: 30px;
+    width: 40%;
+    background-color: #eee8e8;
+
+}
+
+.button_autentificare{
+    border-radius:10px;
+    border:none;
+    background-color:#1ed33c;
+    font-size: 20px;
+    padding: 10px;
+    display:inline-block;
+}
+
+.button_autentificare:hover{
+    background-color:#128d96;
+}
+
+.mesaj_eroare_autentificare{
+    margin: 0px;
+    color: red;
+    font-size: 20px;
+}
+
+
+
+/*--------------------- .tabel_produse.ejs --------------------*/
+
+.meniu_baza_de_date{
+    width: 50%;
+}
+
+/* proprietatea de inline-block trebuie pusa pe formular nu pe buton */
+.form_inline{
+    display:inline-block;
+}
+
+.button_DB{
+    border-radius:10px;
+    border:none;
+    background-color:#1ed33c;
+    font-size: 20px;
+    padding: 10px;
+    display:inline;
+}
+
+.button_DB:hover{
+    background-color:#128d96;
+}
+
+.div_tabel_produse{
+    
+    /* border: solid blueviolet 1px; */
+    width: 70%;
+}
+
+.tabel_produse{
+    color:black;
+    font-size: 24px;
+    padding: 20px;
+}
+
+.table_head{
+    background:rgb(3, 128, 128);
+}
+
+.table_body{
+    background-color: rgb(144, 199, 236);
+}
+
+td, th{
+    padding: 10px;
+}
+
+
+
+/*--------------------- calendar --------------------*/
+
+.content_total{
+    width: 100%;
+    height: auto;
+
+}
+
+.meniu_stanga_box
+{
+    margin: 10px;
+    margin-top: 30px;
+    padding: 10px;
+    padding-left: 40px;
+    width: 20%;
+    border-radius: 10px;
+    border-bottom: solid 1px;
+    border-right: solid 1px;
+    /* border: solid 1px; */
+    /* display:inline-block; */
+    /* height: 100px; */
+}
+
+
+.calendar_box
+{
+    width: 70%;
+    /* border: solid 1px; */
+    /* display:inline-block; */
+    
+    /* height: 100px; */
+}
+
+div.content_total > div{
+    float: left;
+}
+
+table{
+    border-collapse: collapse;
+    /* display:inline-block; */
+}
+
+/*
+tr{
+    padding: 0px;
+    margin: 0px;
+} */
+
+td{
+    width: 150px;
+    height: 130px;
+    border: solid 1px rgb(15, 15, 15);
+    /* padding: 0px; */
+    margin: 10px;
+}
+
+.continut_td{
+    font-size: 20px;
+}
+
+.numar_data{
+    background-color: rgb(43, 243, 3);
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    padding: 3px;
+}
+
+.buton_zi{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+.buton_zi:hover{
+    background-color: rgb(212, 198, 198);
+    border-radius: 10%;
+}
+
+
+.buton_afisare_calendar{
+    border-radius:10px;
+    border:none;
+    background-color:#1ed33c;
+    font-size: 20px;
+    padding: 10px;
+    
+}
+
+.buton_afisare_calendar:hover{
+    background-color:#1ed3bb;
+}
+
+
+
+/*--------------------- modal_box_ --------------------*/
+
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 80px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.button_adaugare{
+    border-radius:10px;
+    border:none;
+    background-color:#1ed33c;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.button_adaugare:hover{
+    background-color:#1ed3bb;
+}
+
+.continut{
+    background-color: rgb(252, 250, 248);
+}
+
+.date_eveniment_nou{
+    border: none;
+    border-bottom: solid 1px;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.evenimente_existente{
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    background-color: rgb(212, 245, 225);
+    padding: 5px;
+    max-height: 250px;
+    overflow-y:auto;
+}
+
+.eveniment_interior{
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    border-bottom: solid 1px;
+    background-color: rgb(224, 243, 232);
+    padding: 2px;
+}
+
+
+
+.content_button{
+    width: 100%;
+    height: 100%;
+    /* background-color: lightseagreen; */
+}
+
+.exista_eveniment{
+    margin-right: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: lightcoral;
+    display: inline-block;
+}
